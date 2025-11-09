@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng nhập hệ thống chấm công</title>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="auth.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🔐 Hệ thống Chấm Công Pro</h1>
+  <div id="g_id_onload"
+       data-client_id="YOUR_GOOGLE_CLIENT_ID"
+       data-login_uri="dashboard.html"
+       data-auto_prompt="false">
+  </div>
+  <div class="g_id_signin"
+       data-type="standard"
+       data-shape="rectangular"
+       data-theme="outline"
+       data-text="sign_in_with"
+       data-size="large">
+  </div>
+</body>
+</html>

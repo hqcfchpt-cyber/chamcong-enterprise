@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bảng Chấm Công Enterprise</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body onload="initDashboard()">
+  <h2>Xin chào, <span id="username"></span></h2>
+  <button onclick="logout()">Đăng xuất</button>
+
+  <section id="controls">
+    <input type="file" id="input-excel">
+    <button id="btn-process">Xử lý file</button>
+    <button id="btn-export" style="display:none;">Xuất Excel</button>
+  </section>
+
+  <div id="output"></div>
+
+  <h3>📈 Biểu đồ lương theo thời gian</h3>
+  <canvas id="trendChart" width="800" height="400"></canvas>
+
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
